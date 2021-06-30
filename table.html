@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        td{
+            border:1px solid black;
+        }
+        th{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- rowspan , colspan -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Emp No</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>Pune</td>
+            <td>100</td>
+            <td>40000</td>
+        </tr>
+        <tr>
+            <td>XYZ</td>
+            <td>Thane</td>
+            <td>101</td>
+            <td>50000</td>
+        </tr>
+    </table>
+
+<hr>
+
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Skills</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+            <th>Javascript</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>7</td>
+            <td>5</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>XYZ</td>
+            <td>4</td>
+            <td>5</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
