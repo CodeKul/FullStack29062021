@@ -4,22 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>User and Workspace Settings</h1> h2,h3,h4,h5,h6
-    <p>It is easy to configure Visual Studio Code to your liking through its various settings. Nearly every part of VS Code's editor, user interface, and functional behavior has options you can modify.</p>
-    <img src="https://code.visualstudio.com/assets/docs/getstarted/settings/hero.png">
-    <p>VS Code provides two different scopes for settings:</p>
-    <ul>
-        <li><strong>User Settings</strong> - Settings that apply globally to any instance of VS Code you open.</li>
-        <li><b>Workspace Settings</b> - Settings stored inside your workspace and only apply when the workspace is opened.</li>
-    </ul>
-    <p>Workspace settings override user settings. Workspace settings are specific to a project and can be shared across developers on a project.</p>
+    <!-- username,email,Name,gender,hobbies,comments,city,birthdate,password -->
+    <!-- attributes -id ,class,name -->
+    <!-- Block Elements, Inline Elements -->
+    <form>
+        
+        <label for="username">Username : </label>
+        <input type="text" placeholder="Enter username" id="username">
+        <br/><br/>
+        <label for="email">Email : </label>
+        <input type="email" placeholder="Enter email">
+        <br/><br/>
 
-    <p>
-        <strong>Note:</strong>A VS Code "workspace" is usually just your project root folder. Workspace settings as well as
-        <a href="lists.html">debugging</a>and <a href="#">task</a> configurations are stored at the root in a .vscode folder. You can also have more than one root folder in a VS Code workspace through a feature called Multi-root workspaces. You can learn more in the What is a VS Code "workspace"? article.
-    </p>
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" name="gender">
+        <label for="other">Other</label>
+
+        <br/><br/>
+        <label for="hobbies">Hobbies: </label>
+        <input type="checkbox">
+        <label for="swimming">Swimming</label>
+        <input type="checkbox">
+        <label for="reading">Reading</label>
+        <input type="checkbox">
+        <label for="coding">Coding</label>
+        <input type="checkbox">
+        <label for="painting">Painting</label>
+        <br><br>
+        
+        <label for="Select city ">Select city</label>
+        <select>
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="nasik">Nasik</option>
+            <option value="Thane">Thane</option>
+        </select>
+        <br><br>
+        <label for="comment">Enter your comments:</label><br>
+        <textarea cols="25" rows="5"></textarea>
+            <br><br>
+        <label for="birthdate">Birthdate</label>
+        <input type="date">
+
+        <br><br>
+        <label for="password">Enter password</label>
+        <input type="password">
+        <br><br>
+        <input type="color">
+        <input type="month">
+        <input type="datetime-local">
+        <input type="file">
+        <input type="number">
+        <input type="range" min="1" max="20">
+        <input type="image" src="react.jpg" alt="react">
+
+        <input type="button" value="Save">
+
+    </form>
 </body>
 </html>
