@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- main,aside,nav,header,footer,section,address,figure,figcaption -->
+    <nav>
+        <ul>
+            <li>Docs</li>
+            <li>Updates</li>
+            <li>Blog</li>
+            <li>API</li>
+            <li>Extensions</li>
+            <li>FAQ</li>
+            <li>learn</li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Working with Javascript</h1>
+        <p>This topic describes some of the advanced JavaScript features supported by Visual Studio Code. Using the TypeScript language service, VS Code can provide smart completions (IntelliSense) as well as type checking for JavaScript.</p>
+    </header>
+    <main>
+        <section>
+            <div>
+            <h2>IntelliSense</h2>
+            <p>Visual Studio Code's JavaScript IntelliSense provides intelligent code completion, parameter info, references search, and many other advanced language features. Our JavaScript IntelliSense is powered by the JavaScript language service developed by the TypeScript team. While IntelliSense should just work for most JavaScript projects without any configuration, you can make IntelliSense even more useful with JSDoc or by configuring a jsconfig.json project.</p>
+            <p>For the details of how JavaScript IntelliSense works, including being based on type inference, JSDoc annotations, TypeScript declarations, and mixing JavaScript and TypeScript projects, see the JavaScript language service documentation.</p>
+            <p>When type inference does not provide the desired information, type information may be provided explicitly with JSDoc annotations. This document describes the JSDoc annotations currently supported.</p>
+            <p>In addition to objects, methods, and properties, the JavaScript IntelliSense window also provides basic word completion for the symbols in your file</p>
+        </div>
+        <div>
+            <h3>Typings and Automatic Type Acquisition</h3>
+            <p>IntelliSense for JavaScript libraries and frameworks is powered by TypeScript type declaration (typings) files. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience in a performant manner.</p>
+            <p>Many popular libraries ship with typings files so you get IntelliSense for them automatically. For libraries that do not include typings, VS Code's Automatic Type Acquisition will automatically install community maintained typings file for you.</p>
+            <p>Automatic type acquisition requires npmjs, the Node.js package manager, which is included with the Node.js runtime. In this image you can see IntelliSense, including the method signature, parameter info, and the method's documentation for the popular lodash library.</p>
+        </div>
+        </section>
+        <section>
+            <figure>
+                <img src="aboutPage.jpg" alt="">
+                <figcaption>About Page image</figcaption>
+            </figure>
+        </section>
+    </main>
+    <section>
+    <footer>
+        Copyright 2021
+        <address>ABC Lane,Pune</address>
+    </footer>
+    </section>
+</body>
+</html>
