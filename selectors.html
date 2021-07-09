@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       /* .abc,.def,.xyz{
+
+       } */
+        #heading{
+            text-align: center;
+            
+        }
+
+        .paragraph{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+        }
+        .container{
+            width:90%;
+            margin:0 auto;
+        }
+
+        .btn{
+            padding:20px;
+            border:2px solid navy;
+            color:navy;
+            font-size:16px;
+            background-color: white;
+            border-radius:5px;
+        }
+
+        .btn-two{
+            background-color: #b19cd9;
+            padding:6px;
+            border:none;
+            color:white;
+        }
+
+        section p span{
+            font-weight: bold;
+        }
+
+        /* section >button - direct children of section tag which are button*/
+        section > .btn-two{
+            border:2px solid black;
+        }
+
+        section > p span{
+            background-color: crimson;
+        }
+
+        h3 + p{
+            font-family: cursive;
+        }
+
+        h3 ~ p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* h2 + h3 -adjacent sibling*/
+        /* h3 ~ p - general/any sibling*/
+        /* [attr]/[attr=value] - attribute selectors */
+
+        /* [href ^= "ind"]{
+                background-color: darkcyan;
+        }
+        [href $= "ml"]{
+                background-color: lightsalmon;
+        }
+        [href *= "de"]{
+            border:2px solid blue;
+        } */
+
+        /* : */
+
+        a:link{
+            color:darkgreen;
+            
+        }
+        a:visited{
+            color:darkred;
+           
+        }
+        a:active{
+            color:mediumseagreen;
+            /* background-color: mediumvioletred; */
+        }
+
+        input:focus{
+            background-color: mediumturquoise;
+        }
+
+        .btn:hover{
+            background-color: lightpink;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- element selector,id selectors,class selector -->
+    <header>
+        <h1 id="heading">Getting Started with Java in VS Code</h1>
+    </header>
+    <section class="container">
+        <p class="paragraph">This tutorial shows you how to write and run Hello World program in Java with Visual Studio Code. It also covers a few advanced features, which you can explore by reading other documents in this section.</p>
+        <p class="paragraph">For an overview of the features available for Java in VS Code, see Java Language Overview</p>
+        <p class="paragraph">If you run into any issues when following this tutorial, you can contact us by clicking the Report an issue button below.</p>
+        <button class="btn">Report an issue</button>
+
+    </section>
+    <section class="container">
+        <h2>Setting up VS Code for Java development</h2>
+
+        <h3>Coding Pack for Java</h3>
+        <p>To help you set up quickly, you can install the <span class='span-cls'>Coding Pack for Java</span>, which includes VS Code, the Java Development Kit (JDK), and essential Java extensions. The Coding Pack can be used as a clean installation, or to update or repair an existing development environment.</p>
+        <button class="btn-two">Install the coding pack for Java-Windows</button><br/><br/>
+        <button class="btn-two">Install the coding pack for Java-macOS</button>
+
+    </section>
+    <section class="container">
+        <h3>Installing extensions</h3>
+        <p>If you are an existing VS Code user, you can also add Java support by installing <a href="#" target="_blank">Java Extension Pack</a>, which includes these extensions:   </p>
+        <ul>
+            <li><a href="index.html" target="_blank">Language Support for Java(TM) by Red Hat</a></li>
+            <li><a href="#" target="_blank">Debugger for Java</a></li>
+            <li><a href="#" target="_blank">Java test Runner</a></li>
+            <li><a href="audio-video-tags.html" target="_blank">Maven for Java</a></li>
+            <li><a href="Lists-assignment.PNG" target="_blank">Project Manager for Java</a></li>
+        </ul>
+        <button class="btn-two">Install the Java Extension Pack</button>
+        <p>The Java Extension Pack provides a Quick Start guide and tips for code editing and debugging. It also has a FAQ that answers some frequently asked questions. Use the command Java: Getting Started from the Command Palette (Ctrl+Shift+P) to launch the guide.</p>
+        <input type="text">
+    </section>
+</body>
+</html>
