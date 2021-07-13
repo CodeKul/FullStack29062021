@@ -48,7 +48,7 @@
 
         /* section >button - direct children of section tag which are button*/
         section > .btn-two{
-            border:2px solid black;
+            /* border:2px solid black; */
         }
 
         section > p span{
@@ -99,9 +99,35 @@
             background-color: lightpink;
             cursor:pointer;
         }
+        .btn-two:hover{
+            background-color: rebeccapurple;
+            cursor:pointer;
+        }
+        
+        .extension{
+            background-color: white;
+            font-weight: bold;
+        }
+
+        .install-list li:last-child{
+            background-color: violet;
+        }
+        .install-list li:nth-last-child(2){
+            border:1px solid seagreen;
+        }
+        .only h5:only-child{
+            background-color: sienna;
+        }
+        .section-3 button:only-of-type{
+            border:2px solid darkolivegreen
+        }
     </style>
 </head>
 <body>
+    <!--Pseudo classes ==> :link,:active,:visited,:hover,:focus,
+        :first-child,:last-child,nth-child(),:nth-last-child(),
+        :only-child,:first-of-type,:last-of-type,:nth-of-type,
+        :nth-last-of-type,:only-of-type -->
     <!-- element selector,id selectors,class selector -->
     <header>
         <h1 id="heading">Getting Started with Java in VS Code</h1>
@@ -122,10 +148,10 @@
         <button class="btn-two">Install the coding pack for Java-macOS</button>
 
     </section>
-    <section class="container">
+    <section class="container section-3">
         <h3>Installing extensions</h3>
         <p>If you are an existing VS Code user, you can also add Java support by installing <a href="#" target="_blank">Java Extension Pack</a>, which includes these extensions:   </p>
-        <ul>
+        <ul class="install-list">
             <li><a href="index.html" target="_blank">Language Support for Java(TM) by Red Hat</a></li>
             <li><a href="#" target="_blank">Debugger for Java</a></li>
             <li><a href="#" target="_blank">Java test Runner</a></li>
@@ -133,8 +159,27 @@
             <li><a href="Lists-assignment.PNG" target="_blank">Project Manager for Java</a></li>
         </ul>
         <button class="btn-two">Install the Java Extension Pack</button>
-        <p>The Java Extension Pack provides a Quick Start guide and tips for code editing and debugging. It also has a FAQ that answers some frequently asked questions. Use the command Java: Getting Started from the Command Palette (Ctrl+Shift+P) to launch the guide.</p>
+        <p>The Java Extension Pack provides a Quick Start guide and 
+            tips for code editing and debugging. It also has a FAQ 
+            that answers some frequently asked questions. 
+            Use the command Java: Getting Started from the 
+            Command Palette (Ctrl+Shift+P) to launch the guide.</p>
         <input type="text">
+        <p>You can also install extensions separately. The <span class="extension">Extension Guide</span> is provided to help you. You can launch the guide with the <strong>Java: Extension Guide command.</strong></p>
+         <p>For this tutorial, the only required extensions are:</p>
+         <ul>
+             <li><a href="#">Language Support for Java(TM) by Red Hat</a></li>
+             <li><a href="#">Debugger for Java</a></li>
+         </ul>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit esse officia illum, id labore nemo ab sunt voluptates alias quod.</p>
+         <ul>
+            <li><a href="#">Language Support for Java(TM) by Red Hat</a></li>
+            <li><a href="#">Debugger for Java</a></li>
+        </ul>
+    </section>
+    <section class="only">
+        <h5>Only CHILD</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eum, assumenda non architecto dolorum neque illum ipsum vitae odit laudantium.</p>
     </section>
 </body>
 </html>
