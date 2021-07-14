@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .item{
+            height:200px;
+            width:200px;
+            margin:10px;
+            }
+        .one,.three{
+            background-color: purple;
+        }
+        .two,.four{
+            background-color: seagreen;
+        }
+
+        .parent{
+            border:1px solid black;
+            background-color: lightgrey;
+            display: flex;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <!-- Flex - flex-container , flex-items -->
+
+    <div class="parent">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+    </div>
+</body>
+</html>
