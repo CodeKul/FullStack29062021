@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: darkgreen;
+            height:200px;
+            width:230px;
+            margin:100px 200px 100px;
+            /* transform:translate(80px,40px);  */
+            /* transform:translateY(400px); */
+            /* transform: rotate(60deg);  */
+            transform: scale(2);
+        }
+
+        .card{
+            width:300px;
+            border:1px solid grey;
+            border-radius: 4px;
+            margin:10px;
+            /* transition-property:transform;
+            transition-duration:1s;
+            transition-delay:0s;
+            transition-timing-function: ease-in-out; */
+
+            transition:transform 1s ease-in;
+        }
+        .card-container{
+            display: flex;
+        }
+        .card:hover{
+             /*transform:scale(1.1); */
+            transform:translate(10px,10px);
+            
+           
+            /* transform: skew(40deg); */
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- transform - translate,rotate,scale,skew -->
+    <!-- transition-property , transition-duration,transition-timing-function,transition-delay -->
+    <!-- <div class="item">
+            Inside ITEM
+    </div> -->
+
+<div class="card-container">
+
+    <div class="card">
+        <img src="blog-writing.jpg" alt="" width="300">
+        <h4>Quas consectetur</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur fugiat culpa, fuga dolorum perferendis!</p>
+    </div>
+
+    <div class="card">
+        <img src="blog-writing.jpg" alt="" width="300">
+        <h4>Quas consectetur</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur fugiat culpa, fuga dolorum perferendis!</p>
+    </div>
+
+    <div class="card">
+        <img src="blog-writing.jpg" alt="" width="300">
+        <h4>Quas consectetur</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur fugiat culpa, fuga dolorum perferendis!</p>
+    </div>
+</div>
+</body>
+</html>
