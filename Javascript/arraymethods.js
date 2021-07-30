@@ -17,6 +17,19 @@ console.log(slicedArray);
 console.log(seasons);
 
 //splice -modifying orignal array
-let x = seasons.splice(1, 2);
+let skills = ["Javascript", "React JS", "CSS", "Bootstrap", "HTML"];
+//splice(startIndex,deleteCount,element1,element2...elementn)
+let x = skills.splice(1, 4, "Node JS", "Mongo DB", "AWS");
 console.log(x);
-console.log(seasons);
+console.log(skills);
+
+//forEach
+let output = skills.forEach((i, id) => {
+  console.log(id + ": " + i);
+});
+
+let op = skills.map((k, id) => {
+  console.log(`${id}.) ${k}`);
+});
+console.log(output);
+console.log(op);
