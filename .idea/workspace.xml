@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2c1d3e3-d692-4c1d-a823-daed384101ce" name="Default Changelist" comment="arraymethods,loops">
+    <list default="true" id="a2c1d3e3-d692-4c1d-a823-daed384101ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javascript/demoJS.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javascript/demoJS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627554687084</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="hoisting,scope">
+      <created>1627900806233</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1627900806233</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,25 +206,26 @@
     <MESSAGE value="javascript" />
     <MESSAGE value="javascript-operators,datatypes" />
     <MESSAGE value="arraymethods,loops" />
-    <option name="LAST_COMMIT_MESSAGE" value="arraymethods,loops" />
+    <MESSAGE value="hoisting,scope" />
+    <option name="LAST_COMMIT_MESSAGE" value="hoisting,scope" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1627640978916">
+    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1627900804965">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1627640978916" />
-    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1627648717944">
+    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1627900804965" />
+    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1627907776892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1627648717944" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1627640985902">
+    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1627907776892" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1627900821762">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1627640985902" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1627648689126">
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1627900821762" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1627907756097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1627648689126" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1627907756097" />
     <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1625740385323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

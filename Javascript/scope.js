@@ -6,11 +6,13 @@
 let x = 200;
 function operation() {
   let test = "I am test";
+  var localVar= 'I am local'
   console.log("Inside operation");
   console.log(test);
   console.log(x);
 }
 console.log(x);
+
 operation();
 
 if (x == 200) {
