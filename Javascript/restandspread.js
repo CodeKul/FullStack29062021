@@ -1,4 +1,4 @@
-//ES6 - let,const,template literals,rest parmeter and spread operator/syntax
+//ES6 - let,const,template literals,rest parmeter and spread operator/syntax,destructuring
 
 function displayName(name) {
   //parameter
@@ -25,7 +25,7 @@ addNumbers(100, 300, 450, 900, 600, 567, 877, 245);
 //spread- take 1 element and spread it out into multiple elements
 let brands = ["Nike", "Apple", "Microsoft", "Reebok", "Patanjali"];
 
-function displayBrands(a, b, c, d, e,f,g) {
+function displayBrands(a, b, c, d, e, f, g) {
   console.log(g);
 }
 
