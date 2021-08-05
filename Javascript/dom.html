@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            padding:15px;
+            border:none;
+            background-color: mediumseagreen;
+            color:white;
+            border-radius:4px;
+        }
+        #description{
+            font-size: 15px;
+            font-style:oblique;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <div name="first-container"> 
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa illum aliquam nemo assumenda, tempore aperiam eveniet enim sapiente doloremque sit tenetur ratione, maiores, nisi natus. Perferendis ipsa tempora adipisci, fuga totam dolores explicabo hic repudiandae amet recusandae fugiat vero.</p>
+        <button class="btn">Read More</button>
+        <p class="short-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat vero accusamus asperiores consectetur? Eius incidunt est alias voluptas reiciendis.</p>
+    </div>
+    <span class="short-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, perferendis?</span>
+<button class="btn">Report</button>
+<div name="first-container">
+    <a href="animation.html">Click here</a>
+</div>
+    <script>
+        //getElementById,getElementsByClassName,getElementsByName,getElementsByTagName,querySelector,querySelectorAll
+         const p = document.getElementById("description")
+         const one = document.getElementsByClassName("short-info")
+         const tagName = document.getElementsByTagName("button")
+        const named = document.getElementsByName("first-container")
+         console.log(p)
+         console.log(one[1])
+         console.log(tagName)
+         console.log(named[0])
+
+         const readMoreBtn = document.querySelector(".btn")
+        console.log(readMoreBtn)
+
+        const all  =document.querySelectorAll(".btn")
+        console.log(all)
+        
+    </script>
+</body>
+</html>
