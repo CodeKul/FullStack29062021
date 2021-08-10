@@ -24,22 +24,22 @@
     <h1>Document Object Model</h1>
     <div name="first-container"> 
         <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa illum aliquam nemo assumenda, tempore aperiam eveniet enim sapiente doloremque sit tenetur ratione, maiores, nisi natus. Perferendis ipsa tempora adipisci, fuga totam dolores explicabo hic repudiandae amet recusandae fugiat vero.</p>
-        <button class="btn">Read More</button>
+        <button class="btn" onclick="displayMessage()">Read More</button>
         <p class="short-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat vero accusamus asperiores consectetur? Eius incidunt est alias voluptas reiciendis.</p>
     </div>
     <span class="short-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, perferendis?</span>
-<button class="btn">Report</button>
+<button class="btn" id="reportBtn">Report</button>
 <div name="first-container">
     <a href="animation.html">Click here</a>
 </div>
     <script>
         //getElementById,getElementsByClassName,getElementsByName,getElementsByTagName,querySelector,querySelectorAll
-         const p = document.getElementById("description")
-         const one = document.getElementsByClassName("short-info")
+         
+        //  const one = document.getElementsByClassName("short-info")
          const tagName = document.getElementsByTagName("button")
         const named = document.getElementsByName("first-container")
-         console.log(p)
-         console.log(one[1])
+         
+        //  console.log(one[1])
          console.log(tagName)
          console.log(named[0])
 
@@ -48,6 +48,34 @@
 
         const all  =document.querySelectorAll(".btn")
         console.log(all)
+
+        const p = document.getElementById("description")
+        p.innerText="<strong>A good place to start is with routes.</strong>"
+        
+
+        //event Handling in DOM
+        //onclick,addEventListener
+
+        function displayMessage(){
+               const elements =  document.getElementsByClassName("short-info")
+               elements[0].innerHTML=" navbars in non-static positions. Choose from fixed to the top,"
+        }
+
+        document.getElementById("reportBtn").addEventListener('click',function(){
+            alert("First Event")
+        })
+
+        document.getElementById('reportBtn').addEventListener('click',function(){
+            console.log("Second Event")
+        })
+        
+
+        // let quotes=["abc","xyz","poq"]
+        // let quote=[{
+        //     quoteText:"abc",
+        //     author:"xyz"
+        // },{},{}]
+        
         
     </script>
 </body>

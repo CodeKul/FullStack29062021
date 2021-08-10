@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>DOM - createElement</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia ipsam eos magni eius? Nihil sapiente at consectetur explicabo atque?</p>
+    </div> -->
+    <script>
+       let heading = document.createElement('h1')
+       console.log(heading)
+       heading.innerText="DOM - createElement"
+
+       document.body.append(heading)
+       let div = document.createElement('div')
+       let p = document.createElement('p')
+       p.innerHTML="<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia ipsam eos magni eius? Nihil sapiente at consectetur explicabo atque?</li>"
+       console.log(p)
+
+       div.appendChild(p)
+
+       document.body.append(div)
+    </script>
+</body>
+</html>

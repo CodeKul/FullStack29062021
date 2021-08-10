@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-heading{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 35px;
+            color:dodgerblue;
+        }
+    </style>
+</head>
+<body>
+   
+<button onclick="changeHeadingColor()">Change color</button>
+    <script>
+            let heading = document.createElement('h1')
+            console.log(heading)
+            heading.innerText= "Document Object Model"
+            //append,appendChild
+            document.body.append(heading)
+            //document.body.appendChild("Append")
+            let p = document.createElement('p')
+            p.innerHTML="<strong>React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.</strong>"
+            p.style.fontFamily="Cambria"
+            p.style.fontSize="25px"
+            let span=document.createElement('span')
+            span.innerText="Hello World"
+
+            p.appendChild(span)
+            console.log(p)
+            document.body.appendChild(p)
+
+            //setAttribute,getAttribute
+
+            heading.setAttribute('class','main-heading')
+
+            let attrValue =heading.getAttribute('class')
+            console.log(attrValue)
+
+            function changeHeadingColor(){
+                    heading.style.color="green"
+            }
+
+    </script>
+
+</body>
+</html>
