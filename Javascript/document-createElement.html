@@ -11,11 +11,26 @@
             font-size: 35px;
             color:dodgerblue;
         }
+
+        .two{
+            background-color: darkslateblue;
+            color:white;
+            padding:8px;
+            border-radius: 5px;
+        }
+        .active{
+           background-color: darkred; 
+           color:white;
+           padding:5px;
+           border-radius: 4px;
+        }
+       
     </style>
 </head>
 <body>
    
 <button onclick="changeHeadingColor()">Change color</button>
+<button onclick="toggle()">Toggle Class</button>
     <script>
             let heading = document.createElement('h1')
             console.log(heading)
@@ -29,7 +44,8 @@
             p.style.fontSize="25px"
             let span=document.createElement('span')
             span.innerText="Hello World"
-
+            span.setAttribute('class',"span-content")
+           
             p.appendChild(span)
             console.log(p)
             document.body.appendChild(p)
@@ -44,6 +60,21 @@
             function changeHeadingColor(){
                     heading.style.color="green"
             }
+            //hasAttribute,removeAttribute
+
+           let answer =  p.hasAttribute('class')
+           console.log(answer)
+
+        //    span.removeAttribute('class')
+           span.classList.add('one')
+           span.classList.add('two')
+           span.classList.remove('one')
+           
+
+           function toggle(){
+                span.classList.toggle("active")
+           }
+
 
     </script>
 

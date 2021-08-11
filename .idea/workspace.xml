@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628159183267</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="DOM">
+      <created>1628591312829</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1628591312829</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,18 +241,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="DOM" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1628159181673">
+    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1628591311277">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1628159181673" />
-    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1628179731963">
+    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1628591311277" />
+    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1628595226022">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1628179731963" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1628159190885">
+    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1628595226022" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1628591319068">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1628159190885" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1628591319068" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1628179721831">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

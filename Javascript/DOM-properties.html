@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- parentElement,children,previousElement,firstChild,
+        lastChild,nextSibling -->
+    <div class="container" id="container">
+        <ul id="cities">
+            <li>Badami</li>
+            <li>Ballari</li>
+            <li>Bangalore</li>
+            <li>Belgavi</li>
+            <li>Bhadravati</li>
+            <li>Bidar</li>
+            <li>Chikkamagaluru</li>
+        </ul>
+
+
+    </div>
+    <script>
+        let citiesList = document.getElementById("cities").parentElement
+        console.log(citiesList)
+
+        let listItems = document.getElementById('cities').childNodes
+        console.log(listItems)
+
+        let ul= document.getElementById('cities')
+        let result = ul.lastElementChild
+        console.log(result)
+
+
+        let output = ul.firstElementChild.nextElementSibling
+        console.log(output)
+
+    </script>
+</body>
+</html>
