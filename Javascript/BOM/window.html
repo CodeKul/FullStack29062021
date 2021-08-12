@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window object</title>
+</head>
+<body>
+    <p id="info"></p>
+    <p id="content"></p>
+    <button onclick="openWindow()">Open ICICI</button>
+    <button onclick="closeWindow()">Close Window</button>
+    <!-- open(),close(),outerHeight,outerWidth,innerHeight,innerWidth -->
+
+    <script>
+        let p =document.getElementById("info")
+        p.innerHTML=`OuterHeight is ${window.outerHeight} and OuterWidth is${window.outerWidth}`
+
+
+        let p1 = document.getElementById("content")
+        p1.innerHTML=`InnerHeight is ${window.innerHeight} and InnerWidth is${window.innerWidth}`
+
+        let w
+        function openWindow(){
+        w =window.open("https://www.icicibank.com/Personal-Banking/account-deposit/savings-account/insta-save-account.page","bank","height=500;width=200")
+        }
+
+        function closeWindow(){
+            w.close()
+        }
+    </script>
+</body>
+</html>

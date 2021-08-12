@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <p id="avail"></p>
+    <script>
+        document.getElementById("display").innerHTML=`Height is ${screen.height} and width is ${screen.width}`
+
+        document.getElementById("avail").innerHTML=`Height is ${screen.availHeight} and width is ${screen.availWidth}`
+
+ console.log(screen.colorDepth)
+ console.log(screen.pixelDepth)
+
+ console.log(screen.orientation)
+
+    </script>
+</body>
+</html>
