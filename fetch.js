@@ -33,6 +33,42 @@ p.then((response)=>{
 })
 
     console.log(p)
+}
 
+function getComments(){
+    let y=fetch('https://jsonplaceholder.typicode.com/posts',{
+        method:'GET',
+        headers:{
+            'Content-type':'application/json'
+        }
+    })
+    y.then((res)=>{
+        // console.log(res.json())
+        let result= res.json()
+        return result
+    })
+    .then((result)=>{
+        let cInfo=`<table id="tb">
+        <tr>
+           <th>User Id</th>
+           <th>Title</th>
+           <th>Body</th>
+           <th>Id</th>
+        </tr>`
+        result.map((el)=>{
+            cInfo= cInfo+`<tr>
+                <td>${el.userId}</td>
+                <td>${el.title}</td>
+                <td>${el.body}</td>
+                <td>${el.id}</td>
+            </tr>`
+            
+        })
+        console.log(cInfo)
+        document.getElementById('comments').innerHTML=cInfo
+    })
+    .catch((errMsg)=>{
+        console.log(errMsg)
+    })
     
 }
