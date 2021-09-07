@@ -1,0 +1,7 @@
+1)Random quote generator
+Create a button 'Generate Quote'.
+A new quote should be displayed on each button click.
+
+2)Create a text input field and a button 'Add' next to it. On click of 'Add' button 
+the content inside input field should be   displayed as unordered list.
+

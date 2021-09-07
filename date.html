@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // new Date()
+        //new Date('string') yyyy-mm-dd ,mm-dd-yy,mm-dd,yyyy
+        //new Date(year,month,day,hours,min,sec)
+        //new Date(timestamp)no of seconds from 1st january 1970
+
+        let dt = new Date()
+        // console.log(dt)
+        let dt1 = new Date('08-02-2021')
+        console.log(dt1)
+        let dt3 = new Date(2020,04,20,04,30,25,10)
+        // console.log(dt3)
+        let dt4 = new Date(1698304044399)
+        // console.log(dt4)
+
+        //
+//week=['sunday','monday','tuesday']
+       console.log(dt1.getDate())
+       console.log(dt1.getDay())
+       console.log(dt1.getFullYear())
+       console.log(dt3.getHours())
+       console.log(dt3.getMinutes())
+       console.log(dt3.getMilliseconds())
+       console.log(dt3.getSeconds())
+       console.log(dt3.getMonth())
+        console.log(dt3.getTime())  //returns timestamp
+        console.log(dt.getUTCDate())
+        console.log(dt.getUTCHours())
+        console.log(dt.getUTCMinutes())
+
+        console.log(dt.getTimezoneOffset())  //returns minutes 
+        //getTimezoneOffset returns difference between local and UTC in minutes
+        console.log(dt.setFullYear(2022))
+        console.log(dt.setDate(10))
+        console.log(dt.setUTCDate(20))
+        console.log(typeof dt)
+        console.log(typeof dt.toDateString())
+        console.log(dt.toISOString())
+        console.log(dt.toJSON())
+        console.log(dt.toLocaleDateString()) // date
+        console.log(dt.toLocaleString()) // date and time
+        console.log(dt.toString())
+        console.log(dt.toTimeString())
+
+
+    </script>
+</body>
+</html>
