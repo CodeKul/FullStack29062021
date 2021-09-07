@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // cookies - key-value 4kb
+      //local storage - 5mb -
+      //session storage -  5mb
+      //   document.cookie = "username=abc;path=/;expires=" + new Date("2021-08-19");
+      //   document.cookie = "city=Pune";
+      let x = document.cookie;
+      console.log(x);
+
+      //   localStorage.setItem("status", "active");
+      localStorage.setItem("theme", "light");
+
+      let userTheme = localStorage.getItem("theme");
+      console.log(userTheme);
+      if (userTheme === "dark") {
+        document.body.style.backgroundColor = "black";
+      } else {
+        document.body.style.backgroundColor = "white";
+      }
+
+      localStorage.removeItem("status");
+
+      sessionStorage.setItem("firstName", "abc");
+      sessionStorage.setItem("lastName", "xyz");
+      let myName = sessionStorage.getItem("firstName");
+      console.log(myName);
+      sessionStorage.removeItem("firstName");
+    </script>
+  </body>
+</html>

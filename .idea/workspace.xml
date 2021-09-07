@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2c1d3e3-d692-4c1d-a823-daed384101ce" name="Default Changelist" comment="closures,classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transform.html" beforeDir="false" afterPath="$PROJECT_DIR$/transform.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FullStack26July" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -275,10 +274,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1629112107828" />
-    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1628857795662">
+    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1629117129516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1628857795662" />
+    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1629117129516" />
     <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1629113400047">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let count = true;
+      let p = new Promise(function (resolve, reject) {
+        if (count === true) {
+          resolve("Promise Resolved");
+        } else {
+          reject("this promise is rejected");
+        }
+      });
+      //console.log(p);
+
+      p.then((msg)=>{
+        console.log(msg)
+      })
+      .catch((errMsg)=>{
+        console.log(errMsg)
+      })
+
+
+
+      let salary =5000
+      
+      //creation of promise
+      let p1 = new Promise(function(resolve,reject){
+        if(salary>0){
+          resolve(salary)
+        }else{
+          reject("Please try again later")
+        }
+      })
+
+      //promise chaining /handling of promise
+      p1.then((sal)=>{
+       sal = sal +6000
+       console.log(sal)
+       return sal
+      })
+      .then((updatedSalary)=>{
+        console.log(updatedSalary)
+        let pension=updatedSalary*4/100
+        return pension
+      })
+      .then((pension)=>{
+        console.log(pension)
+      })
+      .catch((errmsg)=>{
+        console.log(errmsg)
+      })
+    </script>
+  </body>
+</html>

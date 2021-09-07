@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="showName"></h3>
+    <p id="info"></p>
+    <script type="module">
+        import {setName,getName} from './myModule.js'
+        import employee from './myDefaultModule.js'
+      setName("sucheta")
+      let displayname=getName()
+      document.getElementById("showName").innerHTML=displayname
+
+      let employeeInformation= employee.getEmpInfo()
+      document.getElementById("info").innerHTML=employeeInformation
+    </script>   
+    <script src="./myModule.js" type="module"></script>
+    <script src="./myDefaultModule.js" type="module"></script>
+</body>
+</html>
