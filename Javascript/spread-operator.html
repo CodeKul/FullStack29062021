@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spread an array
+        let arr = [10,3,5,100]
+        console.log(arr) //[10,3,5,100]
+        console.log(...arr) // 10 5 3 100
+
+        //merge 2 arrays
+        let skills=["CSS","Bootstrap"]
+        let newSkills = ["Tailwind","React JS"]
+        //["CSS","Bootstrap","Tailwind","React JS"]
+        let skillsFinal = [...skills,...newSkills,"Node js","SpringBoot"]
+        console.log(skillsFinal) //[["CSS","Bootstrap"],["Tailwind","React JS"]]
+
+        //clone array
+        let arr1 =[5,7,8,5]
+        let arr2 = arr1
+
+        console.log(arr1)
+        console.log(arr2)
+
+        arr2.push(30)
+        console.log(arr1)
+        console.log(arr2)
+
+
+        let a1=[100,90,80,70]
+        let a2=[...a1]
+        console.log(a1)
+        console.log(a2)
+
+        a1.push(60)
+
+        console.log(a1)
+        console.log(a2)
+
+
+        //spread object
+        let obj1={
+            one:10,
+            two:20
+        } 
+        let obj2={
+            three:30,
+            four:40
+        }
+
+        let obj3={...obj1,...obj2}
+        console.log(obj3)
+
+
+        //Rest parameter -- ...
+        function add(a,b,c,d,...numbers){
+            console.log(a,b,c,d,numbers)
+        }
+
+        let array1=[10,30,20,80,90,30,100,50,50]
+        add(120,...array1,900)
+
+
+
+    </script>
+</body>
+</html>

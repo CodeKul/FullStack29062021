@@ -1,8 +1,8 @@
 import React from 'react'
 
 function ProductTable(props) {
-    console.log(props)
-    const {productList}=props //{producList:[{},{},{}] }
+    console.log(props)//{abc:[{name:"",qty:""},{},{}]}  props.productList.
+    const{productList} =props //abc:[{},{},{}] productList.
 
     let student={
         name:"sucheta",
@@ -32,9 +32,13 @@ function ProductTable(props) {
                     <th>Product Qty</th>
                     <th>Product Price</th>
                 </tr>
+                {productList.map((item)=>(
                 <tr>
-
+                    <td>{item.productName}</td>
+                    <td>{item.qty}</td>
+                    <td>{item.price}</td>
                 </tr>
+                ))}
             </table>
         </div>
     )
