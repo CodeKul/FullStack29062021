@@ -6,6 +6,7 @@ import TestAgain from './components/TestAgain';
 import ProductDemo from './Props/ProductDemo';
 import ProductTable from './Props/ProductTable';
 import PropsDemo from './Props/PropsDemo';
+import DisplayMessage from './State/DisplayMessage';
 function App() {
   let username= "abc"
   return (
@@ -17,9 +18,13 @@ function App() {
 
       <ClassDemo/> */}
 
-      <PropsDemo user={["abc","xyz"]} isActive="active" />
+      {/* <PropsDemo user={["abc","xyz"]} isActive="active" />
 
-      <ProductDemo/>
+      <ProductDemo/> */}
+
+
+      {/* State */}
+      <DisplayMessage/>
     </div>
   );
 }
