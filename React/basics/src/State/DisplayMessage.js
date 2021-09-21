@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import RenderMsg from './RenderMsg'
 //rce -class component
 //rfce - function component
 //rconst - constructor
@@ -48,6 +49,7 @@ class DisplayMessage extends Component {
                 {cities.map((city)=>(
                     <li>{city}</li>
                 ))}
+                <RenderMsg msg={this.state.message} cities={this.state.cities}/>
             </div>
         )
     }
