@@ -3,8 +3,11 @@ import './App.css';
 import ClassDemo from './ClassComponent/ClassDemo';
 import Test from './components/Test';
 import TestAgain from './components/TestAgain';
+import DisplayInfoConditionally from './Conditional Rendering/DisplayInfoConditionally';
 import LoginMsg from './Conditional Rendering/LoginMsg';
 import LoginMsgternary from './Conditional Rendering/LoginMsgternary';
+import Counter from './Hooks/useState/Counter';
+import LifecycleMethods from './Lifecycle/LifecycleMethods';
 import ProductDemo from './Props/ProductDemo';
 import ProductTable from './Props/ProductTable';
 import PropsDemo from './Props/PropsDemo';
@@ -36,7 +39,14 @@ function App() {
 
       {/* <HandleLogin/> */}
 
-      <ReadMore/>
+      {/* <ReadMore/> */}
+      {/* <DisplayInfoConditionally/> */}
+
+      {/* <HandleLogin/> */}
+{/* 
+      <LifecycleMethods/> */}
+
+      <Counter/>
     </div>
   );
 }
